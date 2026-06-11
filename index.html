@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dusk & Dialogue — Art, Culture & Education</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">D&amp;D</a>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#blogs">Blogs</a></li>
+      <li><a href="#conversations">Conversations</a></li>
+      <li><a href="#contact" class="nav__cta">Join Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow">Where art meets inquiry</p>
+      <h1 class="hero__title">
+        <span class="hero__title--line">Dusk</span>
+        <span class="hero__title--amp">&amp;</span>
+        <span class="hero__title--line">Dialogue</span>
+      </h1>
+      <p class="hero__sub">
+        A creative studio bridging visual culture, critical thought,<br/>
+        and the art of education — from twilight to conversation.
+      </p>
+      <div class="hero__actions">
+        <a href="#gallery" class="btn btn--primary">Explore Our Work</a>
+        <a href="#blogs" class="btn btn--ghost">Read & Reflect</a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span class="hero__scroll-line"></span>
+      <span class="hero__scroll-label">Scroll</span>
+    </div>
+  </section>
+
+  <!-- MANIFESTO BAND -->
+  <div class="marquee-band" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Art</span><span class="dot">·</span>
+      <span>Culture</span><span class="dot">·</span>
+      <span>Education</span><span class="dot">·</span>
+      <span>Dialogue</span><span class="dot">·</span>
+      <span>Expression</span><span class="dot">·</span>
+      <span>Community</span><span class="dot">·</span>
+      <span>Art</span><span class="dot">·</span>
+      <span>Culture</span><span class="dot">·</span>
+      <span>Education</span><span class="dot">·</span>
+      <span>Dialogue</span><span class="dot">·</span>
+      <span>Expression</span><span class="dot">·</span>
+      <span>Community</span><span class="dot">·</span>
+      <span>Art</span><span class="dot">·</span>
+      <span>Culture</span><span class="dot">·</span>
+      <span>Education</span><span class="dot">·</span>
+      <span>Dialogue</span><span class="dot">·</span>
+    </div>
+  </div>
+
+  <!-- ABOUT STRIP -->
+  <section class="about">
+    <div class="container about__grid">
+      <div class="about__text">
+        <p class="label">Our Purpose</p>
+        <h2 class="section-title">We believe art<br/><em>changes minds.</em></h2>
+        <p class="about__body">
+          Dusk & Dialogue was born from the conviction that the richest conversations happen when day surrenders to night — when light softens and ideas become bold. We create spaces, programs, and experiences that honor creativity as a form of knowledge.
+        </p>
+        <a href="#portfolio" class="btn btn--outline">See Our Impact</a>
+      </div>
+      <div class="about__stats">
+        <div class="stat">
+          <span class="stat__num">120+</span>
+          <span class="stat__label">Artists Supported</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">48</span>
+          <span class="stat__label">Exhibitions Curated</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">6K</span>
+          <span class="stat__label">Students Reached</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">12</span>
+          <span class="stat__label">Cities Activated</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <p class="label">Selected Works</p>
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-desc">A curated window into the art that moves through our space — from emerging voices to established visions.</p>
+      </div>
+      <div class="gallery__filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="painting">Painting</button>
+        <button class="filter-btn" data-filter="photography">Photography</button>
+        <button class="filter-btn" data-filter="installation">Installation</button>
+        <button class="filter-btn" data-filter="digital">Digital</button>
+      </div>
+      <div class="gallery__grid" id="galleryGrid">
+        <!-- Items injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <p class="label label--amber">Our Projects</p>
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-desc">Programs and initiatives that dissolve the line between art and learning.</p>
+      </div>
+      <div class="portfolio__grid">
+        <article class="portfolio-card portfolio-card--featured">
+          <div class="portfolio-card__img" style="background: linear-gradient(135deg, #451952, #AE445A)">
+            <div class="portfolio-card__tag">Education</div>
+          </div>
+          <div class="portfolio-card__body">
+            <h3>The Twilight Curriculum</h3>
+            <p>A semester-long interdisciplinary program pairing fine art history with contemporary studio practice for underserved high school communities.</p>
+            <div class="portfolio-card__meta">
+              <span>2024 – Ongoing</span>
+              <span>3 Schools · 450 Students</span>
+            </div>
+            <a href="#" class="link-arrow">View Project <span>→</span></a>
+          </div>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-card__img" style="background: linear-gradient(135deg, #1D1A39, #451952)">
+            <div class="portfolio-card__tag">Exhibition</div>
+          </div>
+          <div class="portfolio-card__body">
+            <h3>Liminal Hours</h3>
+            <p>A group exhibition exploring the cultural poetics of in-between states — dawn, dusk, transition, and threshold.</p>
+            <a href="#" class="link-arrow">View Project <span>→</span></a>
+          </div>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-card__img" style="background: linear-gradient(135deg, #662549, #F39F5A)">
+            <div class="portfolio-card__tag">Residency</div>
+          </div>
+          <div class="portfolio-card__body">
+            <h3>Open Studio Residency</h3>
+            <p>A six-week live/work residency program offering studio space, mentorship, and public dialogue events for artists-in-development.</p>
+            <a href="#" class="link-arrow">View Project <span>→</span></a>
+          </div>
+        </article>
+        <article class="portfolio-card">
+          <div class="portfolio-card__img" style="background: linear-gradient(135deg, #AE445A, #E8BCB9)">
+            <div class="portfolio-card__tag">Community</div>
+          </div>
+          <div class="portfolio-card__body">
+            <h3>Mural Cities</h3>
+            <p>Partnering with local governments and community organizers to commission site-specific public murals that reflect neighborhood histories.</p>
+            <a href="#" class="link-arrow">View Project <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✦ CONVERSATIONS — creative addition: live rotating quote discussion board -->
+  <section class="conversations" id="conversations">
+    <div class="container">
+      <div class="section-header">
+        <p class="label">Featured Voices</p>
+        <h2 class="section-title">Conversations</h2>
+        <p class="section-desc">We collect the moments where art and language meet — fragments from our talks, workshops, and salons.</p>
+      </div>
+      <div class="quote-stage">
+        <div class="quote-card" id="quoteCard">
+          <blockquote class="quote-card__text" id="quoteText"></blockquote>
+          <div class="quote-card__author" id="quoteAuthor"></div>
+          <div class="quote-card__topic" id="quoteTopic"></div>
+        </div>
+        <div class="quote-nav">
+          <button class="quote-btn" id="quotePrev" aria-label="Previous quote">&#8592;</button>
+          <div class="quote-dots" id="quoteDots"></div>
+          <button class="quote-btn" id="quoteNext" aria-label="Next quote">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOGS -->
+  <section class="blogs" id="blogs">
+    <div class="container">
+      <div class="section-header section-header--light">
+        <p class="label label--amber">Thoughts & Essays</p>
+        <h2 class="section-title">Blogs</h2>
+        <p class="section-desc">Writing that thinks out loud about art, education, and cultural life.</p>
+      </div>
+      <div class="blog__grid">
+        <article class="blog-card blog-card--hero">
+          <div class="blog-card__cover">
+            <div class="blog-card__cover-art" style="background: linear-gradient(160deg, #1D1A39 0%, #662549 60%, #F39F5A 100%)"></div>
+            <div class="blog-card__overlay">
+              <span class="blog-tag">Culture</span>
+              <h3>The Politics of Museum Silence</h3>
+              <p>What does it mean when the most visited galleries are also the quietest? A meditation on who gets to speak inside the institution.</p>
+              <div class="blog-card__meta">
+                <span>Yara Okafor</span>
+                <span>June 2025 · 8 min</span>
+              </div>
+              <a href="#" class="link-arrow link-arrow--light">Read Essay <span>→</span></a>
+            </div>
+          </div>
+        </article>
+        <div class="blog__secondary">
+          <article class="blog-card blog-card--sm">
+            <span class="blog-tag">Education</span>
+            <h3>Teaching Colour Theory Without Walls</h3>
+            <p>How outdoor sessions and neighbourhood walks replace the classroom without sacrificing rigour.</p>
+            <div class="blog-card__meta">
+              <span>Rafael Mendes</span><span>May 2025 · 5 min</span>
+            </div>
+            <a href="#" class="link-arrow">Read <span>→</span></a>
+          </article>
+          <article class="blog-card blog-card--sm">
+            <span class="blog-tag">Art History</span>
+            <h3>Orientalism Revisited: Who Draws the East Now?</h3>
+            <p>A look at how contemporary artists from the MENA region are rewriting the visual language imposed upon them.</p>
+            <div class="blog-card__meta">
+              <span>Lena Khalil</span><span>April 2025 · 10 min</span>
+            </div>
+            <a href="#" class="link-arrow">Read <span>→</span></a>
+          </article>
+          <article class="blog-card blog-card--sm">
+            <span class="blog-tag">Digital Culture</span>
+            <h3>Algorithms Have Taste — And It's a Problem</h3>
+            <p>Exploring how recommendation systems are quietly shaping the visual canon of the next generation.</p>
+            <div class="blog-card__meta">
+              <span>Jordan Park</span><span>March 2025 · 7 min</span>
+            </div>
+            <a href="#" class="link-arrow">Read <span>→</span></a>
+          </article>
+        </div>
+      </div>
+      <div class="blogs__footer">
+        <a href="#" class="btn btn--outline">All Essays &amp; Articles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__bg">
+      <div class="contact__orb contact__orb--1"></div>
+      <div class="contact__orb contact__orb--2"></div>
+    </div>
+    <div class="container contact__inner">
+      <div class="contact__left">
+        <p class="label label--blush">Get in Touch</p>
+        <h2 class="section-title">Start a<br/><em>Dialogue</em></h2>
+        <p class="contact__body">Whether you're an artist looking for support, an institution seeking partnership, or a student ready to begin — we want to hear from you. Every good conversation starts with a first line.</p>
+        <div class="contact__info">
+          <div class="contact__info-item">
+            <span class="contact__info-label">Email</span>
+            <a href="mailto:hello@duskdialogue.com">hello@duskdialogue.com</a>
+          </div>
+          <div class="contact__info-item">
+            <span class="contact__info-label">Studio</span>
+            <span>12 Ember Lane, Arts Quarter</span>
+          </div>
+          <div class="contact__info-item">
+            <span class="contact__info-label">Hours</span>
+            <span>Tue – Sat, 11am – 7pm</span>
+          </div>
+        </div>
+        <div class="contact__social">
+          <a href="#" class="social-link">Instagram</a>
+          <a href="#" class="social-link">Twitter / X</a>
+          <a href="#" class="social-link">Substack</a>
+        </div>
+      </div>
+      <div class="contact__right">
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">I'm reaching out as</label>
+            <select id="subject" name="subject">
+              <option value="">Select a category</option>
+              <option>An artist seeking support</option>
+              <option>An educator / institution</option>
+              <option>A student or learner</option>
+              <option>Press or media</option>
+              <option>A collaborator or sponsor</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us what's on your mind…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          <p class="form-note">We respond within 2 business days.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Dusk &amp; Dialogue</span>
+        <p>Art, Culture, Education.</p>
+      </div>
+      <div class="footer__links">
+        <div>
+          <p class="footer__col-title">Navigate</p>
+          <a href="#gallery">Gallery</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#blogs">Blogs</a>
+          <a href="#conversations">Conversations</a>
+        </div>
+        <div>
+          <p class="footer__col-title">Connect</p>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter / X</a>
+          <a href="#">Substack</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <p class="footer__col-title">Programs</p>
+          <a href="#">Residencies</a>
+          <a href="#">Workshops</a>
+          <a href="#">Exhibitions</a>
+          <a href="#">Education</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <span>© 2025 Dusk & Dialogue. All rights reserved.</span>
+      <span>Made with intention.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
